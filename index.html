@@ -48,6 +48,19 @@ section { padding: 80px 0; border-top: 1px solid rgba(255,255,255,0.1); }
 details { background: #0F0F0F; border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius); padding: 16px; margin-top: 40px; }
 summary { cursor: pointer; font-weight: 600; }
 footer { padding: 40px 0; text-align: center; font-size: 14px; color: rgba(255,255,255,0.5); }
+
+/* Gallery Section */
+.gallery .image-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.gallery .image-row img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: var(--radius);
+}
 </style>
 </head>
 <body>
@@ -101,6 +114,13 @@ footer { padding: 40px 0; text-align: center; font-size: 14px; color: rgba(255,2
         Mix 50 g in 700 ml cold water. Shake 15 s, rest 30 s, shake 5 s.
       </details>
     </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="container image-row">
+    <img src="tub.png" alt="ProCreLyte tub">
+    <img src="model.png" alt="Athlete with ProCreLyte">
   </div>
 </section>
 
